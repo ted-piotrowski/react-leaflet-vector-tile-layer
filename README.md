@@ -11,7 +11,7 @@ import VectorTileLayer from 'react-leaflet-vector-tile-layer';
 const App = () => {
   <MapContainer center={[47.5415, -122.393]} zoom={10} style={{ height: '100%' }}>
     <VectorTileLayer
-      style="mapbox://styles/customstyles/ckpslkwor05q318mzmetjbv5z"
+      styleUrl="mapbox://styles/customstyles/ckpslkwor05q318mzmetjbv5z"
       accessToken="XXXX"
     />
   </MapContainer>
@@ -27,7 +27,7 @@ import VectorTileLayer from 'react-leaflet-vector-tile-layer';
 const App = () => {
   <MapContainer center={position} zoom={13}>
     <VectorTileLayer
-      style="https://api.maptiler.com/maps/outdoor/style.json?key=XXXX"
+      styleUrl="https://api.maptiler.com/maps/outdoor/style.json?key=XXXX"
     />
   </MapContainer>
 }

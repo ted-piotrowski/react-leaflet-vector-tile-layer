@@ -7,15 +7,15 @@ import _mapboxGL from 'mapbox-gl-leaflet';
 _mapboxGL.preventRemovalOfUnusedImport = true;
 
 export interface VectorTileLayerProps extends TileLayerOptions, LayerProps {
-    style: string
+    styleUrl: string
 }
 
 const VectorTileLayer = createTileLayerComponent<
     LeafletTileLayer,
     VectorTileLayerProps
->(function createTileLayer(options, context) {
+>(function createTileLayer({ styleUrl, ...options }, context) {
     return {
-        instance: new (L as any).mapboxGL(options),
+        instance: new (L as any).mapboxGL({ style: styleUrl, ...options }),
         context,
     }
 }, updateGridLayer)
