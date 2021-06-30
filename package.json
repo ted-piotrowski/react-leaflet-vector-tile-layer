@@ -1,0 +1,41 @@
+{
+  "name": "react-leaflet-vector-tile-layer",
+  "version": "0.0.1",
+  "description": "React Leaflet V3 layer for displaying vector tiles",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ted-piotrowski/react-leaflet-vector-tile-layer.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && yarn add -D @react-leaflet/core && tsc && yarn run minify && yarn remove @react-leaflet/core",
+    "minify": "uglifyjs --compress --mangle --output dist/index.min.js -- dist/index.js"
+  },
+  "author": "Ted Piotrowski",
+  "license": "MIT",
+  "peerDependencies": {
+    "leaflet": "^1.7.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-leaflet": "^3.0.5"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.5.21",
+    "@types/react": "^16.8.6",
+    "typescript": "^4.1.3",
+    "uglify-js": "^3.12.5"
+  },
+  "keywords": [
+    "react",
+    "leaflet",
+    "canvas",
+    "typescript",
+    "vector",
+    "tile",
+    "react-leaflet-v3"
+  ],
+  "dependencies": {
+    "mapbox-gl": "^2.3.1",
+    "mapbox-gl-leaflet": "^0.0.15"
+  }
+}
