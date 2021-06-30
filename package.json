@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-vector-tile-layer",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React Leaflet V3 layer for displaying vector tiles",
   "main": "dist/index.js",
   "repository": {
@@ -15,8 +15,6 @@
   "license": "MIT",
   "peerDependencies": {
     "leaflet": "^1.7.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "react-leaflet": "^3.0.5"
   },
   "devDependencies": {
