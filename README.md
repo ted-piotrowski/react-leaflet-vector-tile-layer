@@ -5,8 +5,11 @@ Vector tile layer for React Leaflet V3. Tested with both mapbox and maptiler vec
 ## Mapbox
 
 ```
+import { MapContainer } from 'react-leaflet';
+import VectorTileLayer from 'react-leaflet-vector-tile-layer';
+
 const App = () => {
-  <MapContainer center={position} zoom={13}>
+  <MapContainer center={[47.5415, -122.393]} zoom={10} style={{ height: '100%' }}>
     <VectorTileLayer
       style="mapbox://styles/customstyles/ckpslkwor05q318mzmetjbv5z"
       accessToken="XXXX"
@@ -18,6 +21,9 @@ const App = () => {
 ## Maptiler
 
 ```
+import { MapContainer } from 'react-leaflet';
+import VectorTileLayer from 'react-leaflet-vector-tile-layer';
+
 const App = () => {
   <MapContainer center={position} zoom={13}>
     <VectorTileLayer

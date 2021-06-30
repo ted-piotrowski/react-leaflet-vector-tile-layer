@@ -10,7 +10,7 @@ export interface VectorTileLayerProps extends TileLayerOptions, LayerProps {
     style: string
 }
 
-export const VectorTileLayer = createTileLayerComponent<
+const VectorTileLayer = createTileLayerComponent<
     LeafletTileLayer,
     VectorTileLayerProps
 >(function createTileLayer(options, context) {
@@ -19,3 +19,5 @@ export const VectorTileLayer = createTileLayerComponent<
         context,
     }
 }, updateGridLayer)
+
+export default VectorTileLayer;
