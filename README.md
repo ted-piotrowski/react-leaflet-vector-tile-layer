@@ -1,6 +1,6 @@
 # react-leaflet-vector-tile-layer
 
-Vector tile layer for React Leaflet V3. Tested with both mapbox and maptiler vector tiles.
+Vector tile layer for React Leaflet V3. Tested with both [Mapbox](https://mapbox.com) and [Maptiler](https://maptiler.com) vector tiles. Also works in conjunction with [React Leaflet Layers Control](https://react-leaflet.js.org/docs/example-layers-control).
 
 ## Mapbox
 
