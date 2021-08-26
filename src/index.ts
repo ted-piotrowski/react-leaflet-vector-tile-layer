@@ -1,10 +1,10 @@
+import _maplibreGL from '@maplibre/maplibre-gl-leaflet';
 import {
     createTileLayerComponent, LayerProps, updateGridLayer
 } from '@react-leaflet/core';
 import L, { TileLayer as LeafletTileLayer, TileLayerOptions } from 'leaflet';
-import _mapboxGL from 'mapbox-gl-leaflet';
 
-_mapboxGL.preventRemovalOfUnusedImport = true;
+_maplibreGL.preventRemovalOfUnusedImport = true;
 
 export interface VectorTileLayerProps extends TileLayerOptions, LayerProps {
     styleUrl: string
@@ -15,7 +15,7 @@ const VectorTileLayer = createTileLayerComponent<
     VectorTileLayerProps
 >(function createTileLayer({ styleUrl, ...options }, context) {
     return {
-        instance: new (L as any).mapboxGL({ style: styleUrl, ...options }),
+        instance: new (L as any).maplibreGL({ style: styleUrl, ...options }),
         context,
     }
 }, updateGridLayer)

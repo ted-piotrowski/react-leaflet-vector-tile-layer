@@ -1,1 +1,1 @@
-declare module 'mapbox-gl-leaflet';
+declare module '@maplibre/maplibre-gl-leaflet';
