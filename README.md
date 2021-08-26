@@ -35,4 +35,4 @@ const App = () => {
 
 ## Sponsors
 
-[Shade Map](https://shademap.app) - Shadows cast across a map of the Earth in real-time
+[shademap.app](https://shademap.app) - Shadows cast across a map of the Earth in real-time
