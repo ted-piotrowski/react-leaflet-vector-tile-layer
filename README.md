@@ -1,6 +1,8 @@
 # react-leaflet-vector-tile-layer
 
-Vector tile layer for React Leaflet V3. Tested with both [Mapbox](https://mapbox.com) and [Maptiler](https://maptiler.com) vector tiles. Also works in conjunction with [React Leaflet Layers Control](https://react-leaflet.js.org/docs/example-layers-control).
+Vector tile layer for React Leaflet V3. This is a wrapper around [@maplibre/maplibre-gl-leaflet](https://www.npmjs.com/package/@maplibre/maplibre-gl-leaflet). Tested with both [Mapbox](https://mapbox.com), [Maptiler](https://maptiler.com) and self hosted vector tiles.
+
+Vector tile layer can be nested inside [React Leaflet Layers Control](https://react-leaflet.js.org/docs/example-layers-control).
 
 ## Mapbox
 
@@ -35,4 +37,5 @@ const App = () => {
 
 ## Sponsors
 
-[shademap.app](https://shademap.app) - Shadows cast across a map of the Earth in real-time
+[shademap.app](https://shademap.app) - Year-round world map of sun and shadow
+
