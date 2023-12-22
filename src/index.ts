@@ -4,8 +4,6 @@ import {
 } from '@react-leaflet/core';
 import L, { TileLayer as LeafletTileLayer, TileLayerOptions } from 'leaflet';
 
-_maplibreGL.preventRemovalOfUnusedImport = true;
-
 export interface VectorTileLayerProps extends TileLayerOptions, LayerProps {
     styleUrl: string
 }
