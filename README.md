@@ -7,32 +7,42 @@ Vector tile layer can be nested inside [React Leaflet Layers Control](https://re
 ## Mapbox
 
 ```
-import { MapContainer } from 'react-leaflet';
-import VectorTileLayer from 'react-leaflet-vector-tile-layer';
+import { MapContainer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import VectorTileLayer from "react-leaflet-vector-tile-layer";
 
-const App = () => {
-  <MapContainer center={[47.5415, -122.393]} zoom={10} style={{ height: '100%' }}>
-    <VectorTileLayer
-      styleUrl="mapbox://styles/customstyles/ckpslkwor05q318mzmetjbv5z"
-      accessToken="XXXX"
-    />
-  </MapContainer>
+function App() {
+  return (
+    <MapContainer center={[50.5, 30.5]} zoom={3} style={{ height: "100vh" }}>
+      <VectorTileLayer
+        styleUrl="mapbox://styles/customstyles/ckpslkwor05q318mzmetjbv5z"
+        accessToken="XXXX"
+      />
+    </MapContainer>
+  );
 }
+
+export default App;
 ```
 
 ## Maptiler
 
 ```
-import { MapContainer } from 'react-leaflet';
-import VectorTileLayer from 'react-leaflet-vector-tile-layer';
+import { MapContainer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import VectorTileLayer from "react-leaflet-vector-tile-layer";
 
-const App = () => {
-  <MapContainer center={position} zoom={13}>
-    <VectorTileLayer
-      styleUrl="https://api.maptiler.com/maps/outdoor/style.json?key=XXXX"
-    />
-  </MapContainer>
+function App() {
+  return (
+    <MapContainer center={[50.5, 30.5]} zoom={3} style={{ height: "100vh" }}>
+      <VectorTileLayer
+        styleUrl="https://demotiles.maplibre.org/style.json"
+      />
+    </MapContainer>
+  );
 }
+
+export default App;
 ```
 
 ## Sponsors
