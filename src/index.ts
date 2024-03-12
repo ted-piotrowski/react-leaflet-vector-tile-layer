@@ -1,4 +1,4 @@
-import _maplibreGL from '@maplibre/maplibre-gl-leaflet';
+import '@maplibre/maplibre-gl-leaflet';
 import {
     createTileLayerComponent, LayerProps, updateGridLayer
 } from '@react-leaflet/core';
